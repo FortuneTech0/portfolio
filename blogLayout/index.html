@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog Layout - HOME</title>
+
+  <!-- keep your stylesheet filename -->
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- Font Awesome (you already used this) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="blog-Layout">
+    <div class="blog reveal">BLOG</div>
+
+    <div class="nav">
+      <!-- main nav kept same links; added id for JS toggling -->
+      <nav id="main-nav">
+        <a href="index.html">Home <i class="fa-solid fa-house"></i></a>
+        <a href="blog.html">Blog <i class="fa-solid fa-blog"></i></a>
+        <a href="post.html">Post <i class="fa-solid fa-signs-post"></i></a>
+        <a href="about.html">About <i class="fa-solid fa-user"></i></a>
+      </nav>
+
+      <!-- controls: theme button + mobile hamburger -->
+      <div class="controls">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button id="menu-toggle" class="icon-btn hamburger" aria-label="Open menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="welcome-to-tech-world reveal">
+      Welcome To Tech WORLD <i class="fa-solid fa-globe"></i>
+    </div>
+
+    <!-- hero image block (kept your image filename) -->
+    <div class="image1 reveal" role="img" aria-label="Coding laptop background image"></div>
+
+    <section class="box1">
+      <div class="blue reveal"><strong>Experience is the best Teacher</strong></div>
+      <div class="red reveal"><strong>Knowledge is Power</strong></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© 2025 BLOG • Built with care</small>
+  </footer>
+
+  <!-- defer so DOM is ready -->
+  <script src="index.js" defer></script>
+</body>
+</html>
